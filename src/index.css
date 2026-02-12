@@ -175,6 +175,7 @@ body{
   padding: 0;
   position: relative;
   margin: 0;
+  overflow-x: hidden;
   background: #faf7f5;
   width: 100%;
   display: flex;
@@ -189,12 +190,13 @@ body{
   align-items: center;
   flex-wrap: wrap;
   gap: 4rem;
-  margin: 2rem;
+  margin: 1rem 0;
 }
 .booking h2{
   margin-bottom: 0;
   font-size: 2rem;
   color: #5a2a55;
+  text-align: center;
 }
 .booking h3{
   color: #5a2a55;
@@ -215,7 +217,7 @@ form .personalinfo input, .personalinfo textarea{
   font-size: 1rem;
   margin: 10px 0 ;
   border-radius: 10px;
-  width: 270px;
+  width: 17rem;
 }
 form textarea{
   height: 5rem;
@@ -315,4 +317,128 @@ form button:hover{
 .modal button:hover{
   background: #e8b4bc;
   transform: scale(1.1);
+}
+
+
+
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .herotext h1 {
+    font-size: 1.6rem;
+  }
+  .herotext h2 {
+    font-size: 1rem;
+  }
+  .herotext p {
+    width: 80%;
+    font-size: 0.95rem;
+  }
+  .heroimage {
+    width: 15rem;
+    height: 10rem;
+    border-radius: 20px 0;
+  }
+  .herobtn {
+    padding: 8px 10px;
+    font-size: 0.95rem;
+  }
+  .about p {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .cta {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .ctaimage {
+    width: 90%;
+    height: 160px;
+    border-radius: 20px 0;
+  }
+  .ctatext h2 {
+    font-size: 1.5rem;
+  }
+  .ctabtn {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+  .booking form {
+    gap: 1.5rem;
+    margin: 1rem;
+    flex-direction: column;
+  }
+  .personalinfo, .serviceinfo {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .personalinfo input, .personalinfo textarea,
+  .serviceinfo select, .serviceinfo input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  form button {
+    width: 100%;
+    padding: 10px;
+  }
+  .modal {
+    width: 95%;
+    padding: 20px;
+  }
+  .arrow{
+    top: .03rem;
+    left: .1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+  .herotext h1 {
+    font-size: 2rem;
+  }
+  .herotext h2 {
+    font-size: 1.2rem;
+  }
+  .herotext p {
+    width: 90%;
+  }
+  .heroimage {
+    width: 80%;
+    height: 200px;
+  }
+  .servicebox {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .servicecard {
+    width: 45%;
+  }
+  .about p {
+    width: 80%;
+  }
+  .cta {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .ctaimage {
+    width: 80%;
+    height: 180px;
+  }
+  .booking form {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .personalinfo, .serviceinfo {
+    width: 100%;
+  }
 }
