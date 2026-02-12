@@ -83,7 +83,7 @@ body{
 .servicecard{
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 8rem;
   border: 1px solid #ddd6d1;
   padding: 1rem;
   background: #ffecef;
@@ -91,6 +91,7 @@ body{
 }
 .servicecard h3{
   margin-bottom: 0;
+  text-align: center;
 }
 .servicecard p{
   text-align: start;
@@ -194,7 +195,7 @@ body{
 }
 .booking h2{
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #5a2a55;
   text-align: center;
 }
