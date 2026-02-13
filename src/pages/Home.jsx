@@ -9,6 +9,7 @@ return(
         <div className="hero">
             <div className="herotext">
                 <h1>Velora Hair Studio</h1>
+                <div className="heroimage2"></div>
                 <h2>Beautiful Hair, Expert Care</h2>
                 <p>At Velora Hair Studio, we specialize in modern hair styling, treatments, and protective styles tailored to you. Step in with confidence, leave feeling your best.</p>
                 <button onClick={e => setBooked(!booked)} className="herobtn">Book Appointment</button>
