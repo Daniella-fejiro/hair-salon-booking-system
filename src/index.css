@@ -355,6 +355,7 @@ form button:hover{
     display: none
   }.heroimage2{
     display: block;
+    margin: 1rem 0;
   }
   .herobtn {
     padding: 8px 10px;
